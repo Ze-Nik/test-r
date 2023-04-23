@@ -5,3 +5,4 @@ for i in range(d):
     s += int(x[i])
 print(s)
 
+

@@ -8,4 +8,4 @@ for i in range(len(sp)):
     if k > 1:
         spp.append(sp[i])
     k = 0
-print(set(spp))
+print(set(spp)

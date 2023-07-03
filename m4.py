@@ -26,17 +26,18 @@ def sort(m):
 
 def binp(m, l, h, n):
     mid = (l + h) // 2
-    print(mid)
     if m[mid] == n:
         return mid
+    if l > h:
+        return -1
     if m[mid] > n:
         return binp(m, l, mid - 1, n)
     else:
         return binp(m, mid + 1, h, n)
 
 
-n = 44
-m = [1, 3, 7, 15, 26, 27, 30, 32, 45]
+n = 2
+m = [9, 15, 1, 28, 3, 62, 78, 2]
 print(m)
 sort(m)
 print(m)

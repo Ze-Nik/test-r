@@ -22,3 +22,4 @@ if v1.health <= 0:
     print("Победил ", v2.name)
 else:
     print("Победил ", v1.name)
+

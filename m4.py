@@ -1,29 +1,11 @@
-def sort(m):
-    if len(m) > 1:
-        mid = len(m) // 2
-        l = m[:mid]
-        r = m[mid:]
-        sort(l)
-        sort(r)
-        i, j, k = 0, 0, 0
-        while i < len(l) and j < len(r):
-            if l[i] < r[j]:
-                m[k] = l[i]
-                i += 1
-            else:
-                m[k] = r[j]
-                j += 1
-            k += 1
-        while i < len(l):
-            m[k] = l[i]
-            i += 1
-            k += 1
-        while j < len(r):
-            m[k] = r[j]
-            j += 1
-            k += 1
-
-
+def sorts(m):
+    for i in range(1, len(m)):
+        v = m[i]
+        j = i
+        while j > 0 and m[j - 1] > v:
+            m[j] = m[j - 1]
+            j = j - 1
+        m[j] = v
 def binp(m, l, h, n):
     mid = (l + h) // 2
     if m[mid] == n:
@@ -39,7 +21,7 @@ def binp(m, l, h, n):
 n = 2
 m = [9, 15, 1, 28, 3, 62, 78, 2]
 print(m)
-sort(m)
+sorts(m)
 print(m)
 i = binp(m, 0, len(m) - 1, n)
 print(i)

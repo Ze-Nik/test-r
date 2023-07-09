@@ -25,5 +25,3 @@ s = StringVar()
 v = input("set or get? ")
 vyb(v)
 
-
-

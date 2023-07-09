@@ -26,3 +26,4 @@ print(p3.x, p3.y)
 print(p4.x, p4.y)
 print(p5.x, p5.y)
 print(p6.x, p6.y)
+

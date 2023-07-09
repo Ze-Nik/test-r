@@ -57,3 +57,4 @@ else:
         print(v2.name, 'убит')
     else:
         print('вы сохранили жизнь', v2.name)
+
